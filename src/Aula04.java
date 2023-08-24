@@ -11,10 +11,14 @@ public class Aula04 {
         numbers.add(3);
         numbers.add(4);
         numbers.add(5);
+        int menor = 100000;
 
-        for (int i = 0; i < numbers.size(); i++){
-            
+        for (int number : numbers){
+            if (number < menor){
+                menor = number;
+            }
         }
+        System.out.println(menor);
 
 
     }
