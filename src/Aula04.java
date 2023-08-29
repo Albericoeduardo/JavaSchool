@@ -35,7 +35,7 @@ public class Aula04 {
 
         //ATIVIDADE 03
 
-        numbers.sort(null);
+        Collections.shuffle(numbers);
 
         System.out.println(numbers);
 
