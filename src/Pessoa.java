@@ -5,12 +5,14 @@ public class Pessoa {
     public String sexo;
     public double altura;
     public int idade;
+    public String profissao;
 
     //Construtores podem ou não ter parametros 
 
     //Construtor
-    public Pessoa(){
-
+    public Pessoa(String nome, String profissao){
+        this.nome = nome;
+        this.profissao = profissao;
     }
 
     //Construtor

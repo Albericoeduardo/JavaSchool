@@ -1,43 +1,42 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
 
         // ATIVIDADE 1
 
-        Scanner ler = new Scanner(System.in);
+        // Scanner ler = new Scanner(System.in);
 
-        System.out.println("Digite o numerador: ");
-        int numerador = ler.nextInt();
+        // System.out.println("Digite o numerador: ");
+        // int numerador = ler.nextInt();
 
-        System.out.println("Digite o denominador: ");
-        int denominador = ler.nextInt();
+        // System.out.println("Digite o denominador: ");
+        // int denominador = ler.nextInt();
 
-        System.out.println("Digite a operação que você deseja(+, -, /, *): ");
-        char operacao = ler.next().charAt(0);
+        // System.out.println("Digite a operação que você deseja(+, -, /, *): ");
+        // char operacao = ler.next().charAt(0);
         
-        if (operacao == '+') {
-            System.out.println("A soma dos números é: "+ (numerador + denominador));
-        }else if (operacao == '-') {
-            System.out.println("A subtração dos números é: "+ (numerador - denominador));
-        }else if (operacao == '/') {
-            System.out.println("A subtração dos números é: "+ (numerador / denominador));
-        }else if (operacao == '*') {
-            System.out.println("A subtração dos números é: "+ (numerador * denominador));
-        }else {
-            System.out.println("Selecione uma operação válida");
-        }
+        // if (operacao == '+') {
+        //     System.out.println("A soma dos números é: "+ (numerador + denominador));
+        // }else if (operacao == '-') {
+        //     System.out.println("A subtração dos números é: "+ (numerador - denominador));
+        // }else if (operacao == '/') {
+        //     System.out.println("A subtração dos números é: "+ (numerador / denominador));
+        // }else if (operacao == '*') {
+        //     System.out.println("A subtração dos números é: "+ (numerador * denominador));
+        // }else {
+        //     System.out.println("Selecione uma operação válida");
+        // }
 
         // ATIVIDADE 2
 
-        Scanner contar = new Scanner(System.in);
+        // Scanner contar = new Scanner(System.in);
 
-        System.out.println("Digite um número para fazermos a contagem regressiva: ");
-        int number;
-        for (number = contar.nextInt(); number >= 1; number--) {
-            System.out.println("Número: "+ number);
-        }
-
+        // System.out.println("Digite um número para fazermos a contagem regressiva: ");
+        // int number;
+        // for (number = contar.nextInt(); number >= 1; number--) {
+        //     System.out.println("Número: "+ number);
+        // }
 
 
 
@@ -135,6 +134,25 @@ public class App {
         //     System.out.println(i);
         // }
 
+        
+        // Aluno lucas = new Aluno();
+        // lucas.matricular();
+        // lucas.nome = "Lucas";
+        
+        // Aluno maiara = new Aluno();
+        // maiara.matricular();
+        // maiara.nome = "Maiara";
+        
+        Disciplina matematica = new Disciplina("Matemática");
+        Disciplina portugues = new Disciplina("Português");
+        Disciplina biologia = new Disciplina("Biologia");
+
+        Aluno alberico = new Aluno();
+        alberico.nome = "Albérico";
+        System.out.println(alberico.nome);
+        alberico.matricular(matematica);
+        alberico.obterComprovanteMatricula();
+        
         
     }
 }
